@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Modern JavaScript output
+    "module": "ES2020", // Keeps native ESM (good for import/export)
+    "moduleResolution": "node", // Allows resolving node_modules properly
+    "declaration": true, // Generates .d.ts files for TypeScript consumers
+    "outDir": "./dist", // Output build directory
+    "rootDir": "./src", // Source directory
+    "strict": true, // Enables all strict type-checking
+    "esModuleInterop": true, // Allows default imports from CommonJS
+    "skipLibCheck": true, // Skips type checks on deps (faster builds)
+    "forceConsistentCasingInFileNames": true, // Enforces consistent casing across OSes
+
+    // 👇 Optional but recommended:
+    "allowSyntheticDefaultImports": true, // Helps default import from CJS modules
+    "declarationMap": true // Useful for debugging .d.ts files
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "**/__tests__/*"]
+}
