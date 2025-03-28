@@ -1,0 +1,4 @@
+node-api-guard/node_modules
+node-api-guard/dist
+node-api-guard/build
+node-api-guard/*.tgz
