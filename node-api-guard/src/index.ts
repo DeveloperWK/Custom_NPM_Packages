@@ -7,26 +7,23 @@ import generateLogEntry from "./generateLog";
 import { deleteOldLogs, ensureLogDirectoryExists } from "./logManager";
 import { LogDetails, NodeApiGuardOptions } from "./types";
 
-// Default global configuration
 const defaultOptions: NodeApiGuardOptions = {
   whitelist: [],
   blacklist: [],
   allowedUserAgents: [],
   allowedOrigins: [],
   rateLimit: {
-    windowMs: 60000, // 1 minute
+    windowMs: 60000,
     maxRequests: 100,
     message: "Too many requests",
   },
   enableLogging: false,
-  logToFile: false, // Enable writing logs to a file
-  logFilePath: "logs/access.log", // Default log file path
+  logToFile: false,
+  logFilePath: "logs/access.log",
 };
 
-// Rate limit tracking map
 const rateLimitMap = new Map<string, number[]>();
 
-// Input validation for options
 const validateOptions = (options: Partial<typeof defaultOptions>) => {
   if (options.whitelist && !Array.isArray(options.whitelist)) {
     throw new Error("Invalid whitelist: must be an array");
@@ -234,7 +231,7 @@ const nodeApiGuard = (options: Partial<typeof defaultOptions> = {}) => {
     next();
   };
 };
-// Optional: Rate limit cleanup to prevent memory leaks
+
 setInterval(() => {
   const now = Date.now();
   for (const [ip, timestamps] of rateLimitMap.entries()) {
