@@ -82,16 +82,16 @@ app.listen(3000, () => console.log("Server is running on port 3000"));
 
 By default, `node-api-guard` ensures **optimized security and performance** with these built-in settings:
 
-| Option                   | Default Value                                               |
-| ------------------------ | ----------------------------------------------------------- |
-| `logToFile`              | `false`                                                     |
-| `logFilePath`            | `"./logs/access.log"`                                       |
-| `enableLogging`          | `true`                                                      |
-| **`Auto Log Deletion`**  | ✅ **Enabled (Deletes logs older than 24 hours)**           |
-| **`Rate Limit Cleanup`** | ✅ **Enabled (Automatically removes expired records)**      |
-| `rateLimit.maxRequests`  | `100`                                                       |
-| `rateLimit.windowMs`     | `60000ms`                                                   |
-| `rateLimit.message`      | `"Too many requests from this IP, please try again later."` |
+| Option                   | Default Value                                          |
+| ------------------------ | ------------------------------------------------------ |
+| `logToFile`              | `false`                                                |
+| `logFilePath`            | `"./logs/access.log"`                                  |
+| `enableLogging`          | `false`                                                |
+| **`Auto Log Deletion`**  | ✅ **Enabled (Deletes logs older than 24 hours)**      |
+| **`Rate Limit Cleanup`** | ✅ **Enabled (Automatically removes expired records)** |
+| `rateLimit.maxRequests`  | `100`                                                  |
+| `rateLimit.windowMs`     | `60000ms`                                              |
+| `rateLimit.message`      | `"Too many requests."`                                 |
 
 ## 🛠 **TypeScript Support**
 
