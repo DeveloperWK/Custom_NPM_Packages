@@ -18,10 +18,34 @@
     "build": "tsup",
     "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node.js",
+    "api security",
+    "middleware",
+    "express",
+    "rate limiting",
+    "ip blocking",
+    "security middleware",
+    "cors",
+    "logging"
+  ],
+  "author": "DEVELOPER.WK <wasifulkabir2023@gmail.com>",
   "license": "MIT",
-  "description": "",
+  "description": "Node-API-Guard is a lightweight middleware for securing Node.js APIs with features like rate limiting, IP blocking, CORS control, and logging.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeveloperWK/Custom_NPM_Packages/tree/main/node-api-guard"
+  },
+  "bugs": {
+    "url": "https://github.com/DeveloperWK/Custom_NPM_Packages/issues"
+  },
+  "homepage": "https://github.com/DeveloperWK/Custom_NPM_Packages/blob/main/node-api-guard/README.md",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "website":{
+    "url":"https://developer-wk.vercel.app/"
+  }
   "dependencies": {
     "express": "^4.21.2",
     "node-cron": "^3.0.3"
