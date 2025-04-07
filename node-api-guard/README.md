@@ -143,7 +143,7 @@ app.listen(3000, () => console.log("Server is running on port 3000"));
 
 ✔️ **Enhances API Security** – Prevents abuse, spam, and unauthorized access.  
 ✔️ **Lightweight & Flexible** – Easily configurable for various security needs.  
-✔️ **Easy to Integrate** – Works seamlessly with Express and other frameworks.  
+✔️ **Easy to Integrate** – Works seamlessly with Express.  
 ✔️ **Customizable** – Modify settings to match your security requirements.  
 ✔️ **Automatic Cleanup** – Saves storage and improves performance.
 
