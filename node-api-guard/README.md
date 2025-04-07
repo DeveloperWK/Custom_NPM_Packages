@@ -147,7 +147,9 @@ app.listen(3000, () => console.log("Server is running on port 3000"));
 ✔️ **Customizable** – Modify settings to match your security requirements.  
 ✔️ **Automatic Cleanup** – Saves storage and improves performance.
 
-## 💡Contribute or report issues on [GitHub](https://github.com/DeveloperWK/Custom_NPM_Packages/tree/main/node-api-guard)
+💡 _Contribute or report issues on [GitHub](https://github.com/DeveloperWK/Custom_NPM_Packages/tree/main/node-api-guard) (replace with your repository link)._
+
+---
 
 ### **What's New?**
 
