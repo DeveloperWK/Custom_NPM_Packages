@@ -34,12 +34,12 @@
   "description": "Node-API-Guard is a lightweight middleware for securing Node.js APIs with features like rate limiting, IP blocking, CORS control, and logging.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/DeveloperWK/Custom_NPM_Packages/tree/main/node-api-guard"
+    "url": "https://github.com/DeveloperWK/wk-npm-lab"
   },
   "bugs": {
-    "url": "https://github.com/DeveloperWK/Custom_NPM_Packages/issues"
+    "url": "https://github.com/DeveloperWK/wk-npm-lab/issues"
   },
-  "homepage": "https://github.com/DeveloperWK/Custom_NPM_Packages/blob/main/node-api-guard/README.md",
+  "homepage": "https://github.com/DeveloperWK/wk-npm-lab/blob/main/packages/api-guard/node-api-guard/README.md",
   "engines": {
     "node": ">=14.0.0"
   },
