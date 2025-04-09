@@ -1,4 +1,5 @@
-node-api-guard/node_modules
-node-api-guard/dist
-node-api-guard/build
-node-api-guard/*.tgz
+# Ignore node_modules, dist, build, and .tgz files inside packages
+/packages/**/node_modules/
+/packages/**/dist/
+/packages/**/build/
+/packages/**/*.tgz

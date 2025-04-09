@@ -1,6 +1,6 @@
 {
   "name": "node-api-guard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -43,8 +43,8 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "website":{
-    "url":"https://developer-wk.vercel.app/"
+  "website": {
+    "url": "https://developer-wk.vercel.app/"
   },
   "dependencies": {
     "express": "^4.21.2",
