@@ -13,6 +13,7 @@ export interface NodeApiGuardOptions {
   enableLogging?: boolean;
   logToFile?: boolean;
   logFilePath?: string;
+  MAX_BODY_SIZE?: number;
 }
 
 export interface LogDetails {

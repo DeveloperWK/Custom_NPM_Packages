@@ -37,6 +37,7 @@ app.use(
     logToFile: true,
     logFilePath: "./log/access.log",
     blacklist: ["http://malicious-site.com", "http://spam-site.com"],
+    MAX_BODY_SIZE: 10 * 1024 * 1024,
     enableLogging: true,
     rateLimit: {
       maxRequests: 100,
@@ -65,6 +66,7 @@ app.use(
     logToFile: true,
     logFilePath: "./log/access.log",
     blacklist: ["http://malicious-site.com", "http://spam-site.com"],
+    MAX_BODY_SIZE: 10 * 1024 * 1024,
     enableLogging: true,
     rateLimit: {
       maxRequests: 100,
@@ -92,6 +94,7 @@ By default, `node-api-guard` ensures **optimized security and performance** with
 | `rateLimit.maxRequests`  | `100`                                                  |
 | `rateLimit.windowMs`     | `60000ms`                                              |
 | `rateLimit.message`      | `"Too many requests."`                                 |
+| `MAX_BODY_SIZE`          | `10 * 1024 * 1024` `// 10 megabytes`                   |
 
 ## 🛠 **TypeScript Support**
 
@@ -110,6 +113,7 @@ app.use(
     logToFile: true,
     logFilePath: "./log/access.log",
     blacklist: ["http://malicious-site.com", "http://spam-site.com"],
+    MAX_BODY_SIZE: 10 * 1024 * 1024,
     enableLogging: true,
     rateLimit: {
       maxRequests: 100,

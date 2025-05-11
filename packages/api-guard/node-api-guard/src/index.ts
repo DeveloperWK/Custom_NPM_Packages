@@ -20,6 +20,7 @@ const defaultOptions: NodeApiGuardOptions = {
   enableLogging: false,
   logToFile: false,
   logFilePath: "logs/access.log",
+  MAX_BODY_SIZE: 10 * 1024 * 1024, // 10 megabytes 10 * 1024,
 };
 
 const rateLimitMap = new Map<string, number[]>();
@@ -61,6 +62,7 @@ const nodeApiGuard = (options: Partial<typeof defaultOptions> = {}) => {
       message: options.rateLimit?.message ?? defaultOptions.rateLimit.message,
     },
     logFilePath: options.logFilePath ?? defaultOptions.logFilePath,
+    MAX_BODY_SIZE: options.MAX_BODY_SIZE ?? defaultOptions.MAX_BODY_SIZE,
   };
 
   if (mergedOptions.logToFile) {
@@ -141,7 +143,7 @@ const nodeApiGuard = (options: Partial<typeof defaultOptions> = {}) => {
       }
     };
 
-    const MAX_BODY_SIZE = 10 * 1024;
+    const MAX_BODY_SIZE = mergedOptions.MAX_BODY_SIZE || 10 * 1024 * 1024;
     if (
       req.headers["content-length"] &&
       parseInt(req.headers["content-length"], 10) > MAX_BODY_SIZE
